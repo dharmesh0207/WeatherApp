@@ -1,0 +1,27 @@
+package com.wheatherapp.model
+
+import com.google.gson.annotations.SerializedName
+
+/**
+ * Created by dharmesh on 25/07/21.
+ */
+data class ForecastModel(
+    @SerializedName("temp")
+    var temp: Double,
+    @SerializedName("temp_min")
+    var tempMin: Double,
+    @SerializedName("temp_max")
+    var tempMax: Double,
+    @SerializedName("pressure")
+    var pressure: Int,
+    @SerializedName("feels_like")
+    var feelsLike: Double,
+    @SerializedName("sea_level")
+    var seaLevel: Double,
+    @SerializedName("grnd_level")
+    var groundLevel: Double,
+    @SerializedName("humidity")
+    var humidity: Int,
+    @SerializedName("temp_kf")
+    var tempKf: Double
+)
